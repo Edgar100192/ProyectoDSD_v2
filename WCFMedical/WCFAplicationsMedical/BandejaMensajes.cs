@@ -29,12 +29,12 @@ namespace WCFAplicationsMedical
             msgQ.Formatter = new XmlMessageFormatter(arrTypes);
             medicoACrear = ((Medico)msgQ.Receive().Body);
             StringBuilder sb = new StringBuilder();
-            sb.Append("El Medico: " + medicoACrear.Nombre + medicoACrear.ApellidoPaterno);
+            sb.Append("El Medico:     " + medicoACrear.Nombre + " " + medicoACrear.ApellidoPaterno);
             sb.Append("\n");
-            sb.Append("con N° de DNI: " + medicoACrear.Dni);
+            sb.Append("Con N° de DNI: " + medicoACrear.Dni);
             sb.Append("\n");
             sb.Append("\n");
-            sb.Append("Se ha registrado en la plataforma Medical");
+            sb.Append("Se ha registrado en la plataforma MEDICAL");
             sb.Append("\n");
             MessageBox.Show(sb.ToString(), "Mensaje");
         }

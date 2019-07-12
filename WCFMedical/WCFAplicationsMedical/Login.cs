@@ -20,16 +20,16 @@ namespace WCFAplicationsMedical
         private void button1_Click(object sender, EventArgs e)
         {
             Hide();
-            WCFAplicationsMedical.MenuPrincipal medico1 = new MenuPrincipal();
-            medico1.ShowDialog();
+            WCFAplicationsMedical.MenuPrincipal MenuP1 = new MenuPrincipal();
+            MenuP1.ShowDialog();
             Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             Hide();
-            WCFAplicationsMedical.RegistroUsuario medico1 = new RegistroUsuario();
-            medico1.ShowDialog();
+            WCFAplicationsMedical.RegistroUsuario RegistroU1 = new RegistroUsuario();
+            RegistroU1.ShowDialog();
             Show();
         }
     }

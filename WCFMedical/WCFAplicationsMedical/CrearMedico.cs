@@ -58,12 +58,12 @@ namespace WCFAplicationsMedical
             MessageQueue msgQ = new MessageQueue(".\\Private$\\in");
             msgQ.Send(msg);
             StringBuilder sb = new StringBuilder();
-            sb.Append("                Registro Exitoso");
+            sb.Append("                         ¡Gracias por Registrarse!");
             sb.Append("\n");
             sb.Append("\n");
-            sb.Append("¡Gracias por ser parte de la familia");
+            sb.Append("                Las credenciales de acceso se enviara");
             sb.Append("\n");
-            sb.Append("                     MEDICAL!");
+            sb.Append("                     a su correo en unos momentos    ");
             MessageBox.Show(sb.ToString(), "Mensaje");
             //END > IMPLEMENTACIÓN DE COLAS DE MENSAJE
 

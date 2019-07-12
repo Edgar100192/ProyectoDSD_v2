@@ -41,8 +41,9 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(127, 23);
             this.button1.TabIndex = 0;
-            this.button1.Text = "Crear Paciente";
+            this.button1.Text = "Registrar Paciente";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -50,7 +51,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(127, 23);
             this.button2.TabIndex = 1;
-            this.button2.Text = "Crear Medico";
+            this.button2.Text = "Registrar Medico";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -60,13 +61,14 @@
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(127, 23);
             this.button3.TabIndex = 2;
-            this.button3.Text = "Crear Administradores";
+            this.button3.Text = "Registrar Admin,";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::WCFAplicationsMedical.Properties.Resources.LogoMedical;
-            this.pictureBox1.Location = new System.Drawing.Point(127, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(123, 12);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(156, 50);
             this.pictureBox1.TabIndex = 3;
@@ -76,7 +78,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(410, 219);
+            this.ClientSize = new System.Drawing.Size(400, 219);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);

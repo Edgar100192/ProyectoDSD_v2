@@ -17,7 +17,7 @@ namespace WCFSTMedical
             JavaScriptSerializer js = new JavaScriptSerializer();
             Medico medicoACrear = new Medico()
             {
-                Dni = 2356798,
+                Dni = 235679833,
                 Nombre = "Juan Fabio",
                 ApellidoPaterno = "Limaco",
                 ApellidoMaterno = "Keller",
@@ -39,7 +39,7 @@ namespace WCFSTMedical
             StreamReader reader = new StreamReader(response.GetResponseStream());
             string TramaJson = reader.ReadToEnd();
             Medico medicoCreado = js.Deserialize<Medico>(TramaJson);
-            Assert.AreEqual(2356798, medicoCreado.Dni);
+            Assert.AreEqual(235679833, medicoCreado.Dni);
             Assert.AreEqual("Juan Fabio", medicoCreado.Nombre);
             Assert.AreEqual("Limaco", medicoCreado.ApellidoPaterno);
             Assert.AreEqual("Keller", medicoCreado.ApellidoMaterno);
@@ -55,7 +55,7 @@ namespace WCFSTMedical
             JavaScriptSerializer js = new JavaScriptSerializer();
             Medico medicoACrear = new Medico()
             {
-                Dni = 23234549,
+                Dni = 235679833,
                 Nombre = "Juan Fabio",
                 ApellidoPaterno = "Limaco",
                 ApellidoMaterno = "Keller",
@@ -80,7 +80,7 @@ namespace WCFSTMedical
                 StreamReader reader = new StreamReader(response.GetResponseStream());
                 string TramaJson = reader.ReadToEnd();
                 Medico medicoCreado = js.Deserialize<Medico>(TramaJson);
-                Assert.AreEqual(23234549, medicoCreado.Dni);
+                Assert.AreEqual(235679833, medicoCreado.Dni);
                 Assert.AreEqual("Juan Fabio", medicoCreado.Nombre);
                 Assert.AreEqual("Limaco", medicoCreado.ApellidoPaterno);
                 Assert.AreEqual("Keller", medicoCreado.ApellidoMaterno);
@@ -103,7 +103,7 @@ namespace WCFSTMedical
         public void Test1ObtenerMedico()
         {
             HttpWebRequest request = (HttpWebRequest)WebRequest.
-                Create("http://localhost:50386/Medicos.svc/Medicos/23234549");
+                Create("http://localhost:50386/Medicos.svc/Medicos/235679833");
             request.Method = "GET";
             HttpWebResponse response = (HttpWebResponse)request.GetResponse();
             StreamReader reader = new StreamReader(response.GetResponseStream());
@@ -125,7 +125,7 @@ namespace WCFSTMedical
             JavaScriptSerializer js = new JavaScriptSerializer();
             Medico medicoACrear = new Medico()
             {
-                Dni = 23234549,
+                Dni = 235679833,
                 Nombre = "Juan Fabio Modificado",
                 ApellidoPaterno = "Limaco Modificado",
                 ApellidoMaterno = "Keller Modificado",
@@ -147,7 +147,7 @@ namespace WCFSTMedical
             StreamReader reader = new StreamReader(response.GetResponseStream());
             string TramaJson = reader.ReadToEnd();
             Medico medicoCreado = js.Deserialize<Medico>(TramaJson);
-            Assert.AreEqual(23234549, medicoCreado.Dni);
+            Assert.AreEqual(235679833, medicoCreado.Dni);
             Assert.AreEqual("Juan Fabio Modificado", medicoCreado.Nombre);
             Assert.AreEqual("Limaco Modificado", medicoCreado.ApellidoPaterno);
             Assert.AreEqual("Keller Modificado", medicoCreado.ApellidoMaterno);
@@ -161,7 +161,7 @@ namespace WCFSTMedical
         public void Test30ListarMedico()
         {
             HttpWebRequest request = (HttpWebRequest)WebRequest.
-                Create("http://localhost:50386/Medicos.svc/Medicos/23234549");
+                Create("http://localhost:50386/Medicos.svc/Medicos/235679833");
             request.Method = "GET";
             HttpWebResponse response = (HttpWebResponse)request.GetResponse();
             StreamReader reader = new StreamReader(response.GetResponseStream());

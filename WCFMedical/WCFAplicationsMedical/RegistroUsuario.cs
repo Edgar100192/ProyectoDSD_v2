@@ -24,5 +24,18 @@ namespace WCFAplicationsMedical
             medico1.ShowDialog();
             Show();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Hide();
+            WCFAplicationsMedical.CrearMedico Paciente1 = new CrearMedico();
+            Paciente1.ShowDialog();
+            Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

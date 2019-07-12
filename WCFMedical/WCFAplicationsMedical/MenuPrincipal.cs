@@ -34,5 +34,22 @@ namespace WCFAplicationsMedical
             medico1.ShowDialog();
             Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Hide();
+            WCFAplicationsMedical.BandejaMensajes mensaje1 = new BandejaMensajes();
+            mensaje1.ShowDialog();
+            Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Hide();
+            WCFAplicationsMedical.ConsultarColegioMedicos CM1 = new ConsultarColegioMedicos();
+            CM1.ShowDialog();
+            Show();
+
+        }
     }
 }
